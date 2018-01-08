@@ -1,2 +1,0 @@
-# documentation
-continuousphp documentation repository
