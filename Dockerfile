@@ -1,6 +1,6 @@
-FROM jobandtalent/mkdocs
+FROM squidfunk/mkdocs-material
 
-MAINTAINER Daniel Leivas <daniel.leivas@continuous.lu>
+LABEL maintainer "Daniel Leivas <daniel.leivas@continuous.lu>"
 
 ADD mkdocs.yml /mkdocs/mkdocs.yml
 WORKDIR /mkdocs

@@ -1,17 +1,18 @@
-# Welcome to MkDocs  !
+# Documentation
 
-For full documentation visit [mkdocs.org](http://mkdocs.org).
+Welcome to our documentation page. As you will soon figure out, this
+part of our website is a work in progress as we are still working hard
+to provide you with a comprehensive and friendly documentation.
 
-## Commands
+You can add your comments directly under each section or you can
+[contact us](https://continuousphp.com/contact/) if you have questions/comments.
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs help` - Print this help message.
+Feel free to take a look at our [tutorial page](https://continuousphp.com/tutorial/) where you
+will also find some useful step by step information.
 
-## Project layout
+## Overview
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+continuousphp is your one stop shop to build, package, test and deploy
+your PHP applications in one workflow. It is an innovative PaaS
+(Platform as a Service) providing rapid, iterative and consistent
+application delivery tailored for your PHP development needs.
