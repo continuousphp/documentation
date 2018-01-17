@@ -1,0 +1,116 @@
+# Project information
+site_name: Continuous Documentation
+# Theme
+theme:
+    name: 'material'
+    custom_dir: 'theme'
+    palette:
+        primary: 'indigo'
+        accent: 'light green'
+# Copyright
+copyright: 'Copyright &copy; 2017 - 2018 Continuous SA'
+# Options
+extra:
+  social:
+    - type: 'github'
+      link: 'https://github.com/continuousphp'
+    - type: 'twitter'
+      link: 'https://twitter.com/continuousphp'
+    - type: 'linkedin'
+      link: 'https://www.linkedin.com/company/3160425/'
+# Extensions
+markdown_extensions:
+  - admonition
+  - codehilite(guess_lang=false)
+  - toc(permalink=true)
+  - meta
+# Navigation
+pages:
+    - INTRODUCTION: index.md
+    - GIT REPOSITORY HOSTING SERVICES:  
+        - GIT REPOSITORY HOSTING SERVICES: _docs/vcs.md  
+        - ACCESS &AMP; PERMISSIONS: _docs/vcs/access-and-permissions.md
+        - GITHUB: _docs/vcs/github.md
+        - BITBUCKET: _docs/vcs/bitbucket.md
+        - GITLAB: _docs/vcs/gitlab.md
+    - DEPLOYMENT PIPELINES: _docs/deployment-pipelines.md
+    - TESTING: 
+        - TESTING: _docs/testing.md
+        - PHPUNIT: _docs/testing/phpunit.md
+        - BEHAT: _docs/testing/behat.md
+        - PHPSPEC: _docs/testing/phpspec.md
+        - PHPCS: _docs/testing/phpcs.md
+        - CODECEPTION: _docs/testing/codeception.md
+        - PHPBENCH: _docs/testing/phpbench.md
+        - PHP LINT: _docs/testing/phplint.md
+        - GENERIC TEST: _docs/testing/generic.md
+    - COMPOSER: _docs/composer.md
+    - BROWSER/UI TESTING: 
+        - BROWSER/UI TESTING: _docs/browser-ui-testing.md
+        - PHANTOMJS: _docs/browser-ui-testing/phantomjs.md
+        - SELENIUM SERVER STANDALONE: _docs/browser-ui-testing/selenium-server.md
+    - DEPLOYMENT: 
+        - DEPLOYMENT: _docs/deployment.md
+        - GENERIC TARBALL: _docs/deployment/generic-tarball.md
+        - SCRIPT DEPLOYMENT: _docs/deployment/script.md
+        - AWS CODEDEPLOY: _docs/deployment/aws-code-deploy.md
+        - AWS ELASTIC BEANSTALK: _docs/deployment/aws-elastic-beanstalk.md
+        - ZEND SERVER: _docs/deployment/zend-server.md
+    - PHP: 
+        - PHP: _docs/php.md
+        - 7.1.0: _docs/php/7.1.0.md
+        - 7.0.22: _docs/php/7.0.22.md
+        - 7.0.4: _docs/php/7.0.4.md
+        - 5.6.4: _docs/php/5.6.4.md
+        - 5.5.13: _docs/php/5.5.13.md
+        - 5.5.6: _docs/php/5.5.6.md
+        - 5.4.22: _docs/php/5.4.22.md
+        - 5.4.21: _docs/php/5.4.21.md
+        - 5.3.27: _docs/php/5.3.27.md
+        - PHPBREW: _docs/php/phpbrew.md
+        - 5.3.3: _docs/php/5.3.3.md
+    - CONTAINERS: _docs/containers.md
+    - CREDENTIALS &AMP; AUTHENTICATION: 
+        - CREDENTIALS &AMP; AUTHENTICATION: _docs/credentials-authentication.md
+        - AWS (AMAZON WEB SERVICES): _docs/credentials-authentication/aws.md
+        - SSH KEYS: _docs/credentials-authentication/ssh.md
+        - HTTP BASIC AUTHENTICATION: _docs/credentials-authentication/http-basic-authentication.md
+    - DATABASES: 
+        - DATABASES: _docs/databases.md
+        - MYSQL: _docs/databases/mysql.md
+        - MARIADB: _docs/databases/mariadb.md
+        - POSTGRESQL: _docs/databases/postgresql.md
+        - SQLITE: _docs/databases/sqlite.md
+        - ORACLE XE: _docs/databases/oracle.md
+        - VIRTUOSO 7: _docs/databases/virtuoso.md
+    - NOSQL:
+        - NOSQL: _docs/nosql.md
+        - MONGODB: _docs/nosql/mongodb.md
+        - REDIS: _docs/nosql/redis.md
+        - COUCHBASE: _docs/nosql/couchbase.md
+    - QUEUES:
+        - QUEUES: _docs/queues.md
+        - BEANSTALKD: _docs/queues/beanstalkd.md
+    - WEB SERVERS: _docs/webserver.md
+    - RUBY VERSIONS: _docs/ruby.md
+    - TASK RUNNERS:
+        - TASK RUNNERS: _docs/task-runners.md
+        - SHELL SCRIPTS: _docs/taskrunners/shell-scripts.md
+        - PHING: _docs/taskrunners/phing.md
+    - NODEJS VERSIONS: _docs/nodejs.md
+    - EMAILS: 
+        - MAILCATCHER: _docs/emails/mailcatcher.md
+    - RESTFUL API: _docs/api.md
+    - NOTIFICATION: 
+        - NOTIFICATION: _docs/notification.md
+        - SLACK: _docs/notification/slack.md
+        - HIPCHAT: _docs/notification/hipchat.md
+        - IRC: _docs/notification/irc.md
+        - HTTP: _docs/notification/http.md
+        - AWS SNS: _docs/notification/aws-sns.md
+    - INDEXING TOOLS: 
+        - INDEXING TOOLS: _docs/indexing.md
+        - SOLR: _docs/indexing/solr.md
+    - FIREWALL &AMP; NETOWRK SETTINGS:
+        - NETWORK SETTINGS: _docs/security/firewall.md
+    - ENVIRONMENT VARIABLES: _docs/environment-variables.md
