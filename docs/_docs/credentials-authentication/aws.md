@@ -19,5 +19,5 @@ access all the services you need on AWS!
 The credentials will be injected automatically into each container, so that you can access
 Amazon Web Services at each stage of your build. If you want to deploy using
 [AWS CodeDeploy](https://aws.amazon.com/codedeploy/) or [AWS Elastic Beanstalk](https://aws.amazon.com/elasticbeanstalk/),
-take a look at our documentation section on deployment with [AWS CodeDeploy](/documentation/deployment/aws-code-deploy/)
-or [AWS Elastic Beanstalk](/documentation/deployment/aws-elastic-beanstalk/)!
+take a look at our documentation section on deployment with [AWS CodeDeploy](/_docs/deployment/aws-code-deploy/)
+or [AWS Elastic Beanstalk](/_docs/deployment/aws-elastic-beanstalk/)!
