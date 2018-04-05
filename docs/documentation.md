@@ -1,7 +1,7 @@
 \--- layout: default title: "Continuous Documentation" excerpt: "Here
 you'll find everything you need to implement Continuous Deployment,
 Continuous Delivery and Continuous Integration for your PHP projects on
-continuousphp." permalink: /documentation/ ---
+continuousphp." permalink: /_docs/ ---
 
 # Documentation
 
