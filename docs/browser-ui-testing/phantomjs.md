@@ -18,4 +18,4 @@ PhantomJS runs in every container on continuousphp as a daemon. You can reach it
 
 Check our documentation pages for examples:
 
-* [UI Testing with Behat, Selenium & PhantomJS](//testing/behat#ui-testing-with-selenium-and-phantomjs)
+* [UI Testing with Behat, Selenium & PhantomJS](/testing/behat#ui-testing-with-selenium-and-phantomjs)

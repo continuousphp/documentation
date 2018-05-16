@@ -29,7 +29,7 @@ As for all other testing frameworks on continuousphp, you can choose if the test
 
 ## Executing tasks
 
-You can specify tasks to be executed before running the tests. This can be very useful to initialize external resources like [databases](//databases) or third-party services. Currently continuousphp supports [Phing](https://www.phing.info/), but others will be supported soon (shell commands, ...).
+You can specify tasks to be executed before running the tests. This can be very useful to initialize external resources like [databases](/databases) or third-party services. Currently continuousphp supports [Phing](https://www.phing.info/), but others will be supported soon (shell commands, ...).
 
 !!! note "**IMPORTANT:**" 
   Tasks can be defined at different places in your workflow:
