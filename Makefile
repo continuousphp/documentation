@@ -11,9 +11,9 @@ endif
 	mkdocs build -d dist
 
 deploy:
-	aws s3 sync --acl=public-read --profile=deployer ./dist/ s3://$(bucket)/
+	aws s3 sync --acl=public-read ./dist/ s3://$(bucket)/
 	aws configure set preview.cloudfront true
-	aws cloudfront create-invalidation --profile=deployer --distribution-id $(distribution) --paths '/*'
+	aws cloudfront create-invalidation --distribution-id $(distribution) --paths '/*'
 
 purge:
 	rm -rf dist
