@@ -8,7 +8,7 @@ build:
 ifdef CONTINUOUSPHP
 	rm -rf .git
 endif
-	mkdocs build -d doc_dist
+	mkdocs build -d dist
 
 deploy:
 	aws s3 sync --acl=public-read --profile=deployer ./dist/ s3://$(bucket)/
@@ -16,4 +16,4 @@ deploy:
 	aws cloudfront create-invalidation --profile=deployer --distribution-id $(distribution) --paths '/*'
 
 purge:
-	rm -rf doc_dist
+	rm -rf dist
