@@ -3,7 +3,7 @@
 </a>
 
 <p align="left">
-  <a href="https://continuousphp.com/git-hub/continuousphp/cli"><img alt="Build Status" src="https://status.continuousphp.com/git-hub/continuousphp/cli?token=8eb1b41e-343a-41b5-b68f-179fb1ce1ffe&branch=master" /></a>
+  <a href="https://app.continuousphp.com/git-hub/continuousphp/documentation"><img alt="Build Status" src="https://status.continuousphp.com/git-hub/continuousphp/documentation?token=2a5769d9-bab5-4971-b4b6-54d5bc321764&branch=master" /></a>
 </p>
 
 <p align="left">
