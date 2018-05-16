@@ -8,22 +8,22 @@ excerpt:        "continuousphp docker containers."
 ---
 continuousphp docker containers include by default the following services: 
 
-* [mysql](/_docs/databases/mysql/) 
-* [postgreql](/_docs/databases/postgresql/)
-* [couchbase](/_docs/nosql/couchbase/)
-* [apache2](/_docs/webserver/)
-* [mongodb](/_docs/nosql/mongodb/)
-* [redis](/_docs/nosql/redis/)
+* [mysql](//databases/mysql/) 
+* [postgreql](//databases/postgresql/)
+* [couchbase](//nosql/couchbase/)
+* [apache2](//webserver/)
+* [mongodb](//nosql/mongodb/)
+* [redis](//nosql/redis/)
 
 They also include also the following tools and applications:
 
 * [eb](http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/eb-cli3.html) (AWS ElasticBeanstalk)
 * [graphviz](http://www.graphviz.org/Documentation.php)
 * latex base & recommended 
-* [nvm](/_docs/nodejs/) 
-* [rbenv](/_docs/ruby/)
+* [nvm](//nodejs/) 
+* [rbenv](//ruby/)
 * [subversion](https://subversion.apache.org/)
-* [mailcatcher](/_docs/emails/mailcatcher/)
+* [mailcatcher](//emails/mailcatcher/)
 
 All locales have been installed and configured.
 
