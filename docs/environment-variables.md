@@ -8,11 +8,11 @@ excerpt:        "Support for Environment Variables by continuousphp."
 ---
 continuousphp supports using environment variables at every stage of your builds :
 
-* [When creating the Testing Package](/_docs/environment-variables/#when-creating-the-test-package)
-* [When creating the Deployment Package](/_docs/environment-variables/#when-creating-the-deployment-package)
-* [During the tests](/_docs/environment-variables/#during-the-tests)
-* [During the deployment](/_docs/environment-variables/#during-the-deployment)
-* [Built-in variables by continuousphp](/_docs/environment-variables/#built-in-environment-variables)
+* [When creating the Testing Package](/environment-variables/#when-creating-the-test-package)
+* [When creating the Deployment Package](/environment-variables/#when-creating-the-deployment-package)
+* [During the tests](/environment-variables/#during-the-tests)
+* [During the deployment](/environment-variables/#during-the-deployment)
+* [Built-in variables by continuousphp](/environment-variables/#built-in-environment-variables)
 
 ## Encryption
 
@@ -40,16 +40,16 @@ You can use Environment Variables during the tests. Simply go to the *Test Setti
 of the pipeline configuration), then open the configuration of the testing framework and add one or more
 Environment Variables :
 
-* [PHPUnit](/_docs/testing/phpunit#environment-variables)
-* [Behat](/_docs/testing/behat#environment-variables)
-* [phpspec](/_docs/testing/phpspec#environment-variables)
-* [PHPCS](/_docs/testing/phpcs#environment-variables)
-* [Codeception](/_docs/testing/codeception#environment-variables)
-* [phpbench](/_docs/testing/phpbench#environment-variables)
+* [PHPUnit](/testing/phpunit#environment-variables)
+* [Behat](/testing/behat#environment-variables)
+* [phpspec](/testing/phpspec#environment-variables)
+* [PHPCS](/testing/phpcs#environment-variables)
+* [Codeception](/testing/codeception#environment-variables)
+* [phpbench](/testing/phpbench#environment-variables)
 
 ## During the deployment
 
-You can use Environment Variables in the continuousphp [Script Deployment](/_docs/deployment/script#environment-variables).
+You can use Environment Variables in the continuousphp [Script Deployment](/deployment/script#environment-variables).
 
 ## Built-In Environment Variables
 

@@ -20,4 +20,4 @@ variable `CPHP_SERVICE_SELENIUM` with the desired Selenium Server version as val
 
 Check Selenium's [documentation](https://github.com/SeleniumHQ/selenium/wiki/Grid2) or our examples for more information:
 
-* [UI Testing with Behat, Selenium & Chrome](/_docs/testing/behat#ui-testing-with-selenium-and-chrome)
+* [UI Testing with Behat, Selenium & Chrome](/testing/behat#ui-testing-with-selenium-and-chrome)

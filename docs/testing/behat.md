@@ -29,7 +29,7 @@ As for all other testing frameworks on continuousphp, you can choose if the test
 
 ## Executing tasks
 
-You can specify tasks to be executed before running the tests. This can be very useful to initialize external resources like [databases](/_docs/databases) or third-party services. Currently continuousphp supports [Phing](https://www.phing.info/), but others will be supported soon (shell commands, ...).
+You can specify tasks to be executed before running the tests. This can be very useful to initialize external resources like [databases](/databases) or third-party services. Currently continuousphp supports [Phing](https://www.phing.info/), but others will be supported soon (shell commands, ...).
 
 !!! note "**IMPORTANT:**" 
     Tasks can be defined at different places in your workflow:
@@ -65,7 +65,7 @@ When the build is finished, you can download the JUnit report that continuousphp
 
 ## UI Testing with Selenium and Chrome
 
-In this example we will use the [Selenium Standalone Server](/_docs/browser-ui-testing/selenium-server/) and the
+In this example we will use the [Selenium Standalone Server](/browser-ui-testing/selenium-server/) and the
 *Chrome* webbrowser to run UI tests. Both components are installed by default in the continuousphp containers.
 
 ### Setup
@@ -119,9 +119,9 @@ Feature: Navigating through the Justice League's secret website
 ## UI Testing with Selenium and PhantomJS
 
 Instead of using a real browser like e.g. *Chrome*, you can use a headless browser like
-[PhantomJS](/_docs/browser-ui-testing/phantomjs/) to run your UI tests. In this example we use the Selenium WebDriver
+[PhantomJS](/browser-ui-testing/phantomjs/) to run your UI tests. In this example we use the Selenium WebDriver
 to pilot PhantomJS as a replacement for real browser. Although the continuousphp containers are equippend with the
-[Selenium Standalone Server](/_docs/browser-ui-testing/selenium-server/), in this type of setup it won't be used.
+[Selenium Standalone Server](/browser-ui-testing/selenium-server/), in this type of setup it won't be used.
 
 ### Setup
 Besides Behat, you need to install the [Selenium WebDriver](http://mink.behat.org/en/latest/drivers/selenium2.html) and [Mink extension](http://mink.behat.org/en/latest/at-a-glance.html) by adding them to your `composer.json` file:

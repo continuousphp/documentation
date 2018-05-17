@@ -27,6 +27,6 @@ Alternatively, you can use the environment variable `PACKAGE_PATH` to get the pa
 
 ## Environment Variables
 
-To customize your deployment, you can specify your own [Environment Variables](/_docs/environment-variables) for the script deployment :
+To customize your deployment, you can specify your own [Environment Variables](/environment-variables) for the script deployment :
 
 ![Env Vars](/assets/doc/deployment/script/env-vars.png)
