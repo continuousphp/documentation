@@ -4,6 +4,7 @@ site_name: Continuous Documentation
 theme:
     name: 'material'
     custom_dir: 'theme'
+    logo: 'assets/images/logo-white.svg'
     palette:
         primary: 'indigo'
         accent: 'light green'
