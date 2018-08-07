@@ -12,6 +12,7 @@ excerpt:        "MariaDB support by continuousphp"
 MariaDB containers are available for each activity in your build. To enable one of them, simply add the environment
 variable `CPHP_SERVICE_MARIADB` with the desired MariaDB version as value to your pipeline configuration. Available versions are :
 
+* ***10.2.15***
 * ***10.3.2***
 
 E.g. if you need `MariaDB 10.3.2` in your Behat tests, go to the Testing Settings (step 2 of the Pipeline) and add the
