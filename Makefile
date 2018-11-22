@@ -2,6 +2,7 @@ bucket?=
 distribution?=
 
 install:
+	pip install --upgrade pip
 	pip install mkdocs==1.0.4
 	pip install mkdocs-material==3.1.0
 	
