@@ -2,8 +2,9 @@ bucket?=
 distribution?=
 
 install:
-	pip install mkdocs mkdocs-material --upgrade --user
-
+	pip install mkdocs==0.17.5
+	pip install mkdocs-material==2.9.4
+	
 build:
 ifdef CONTINUOUSPHP
 	rm -rf .git
