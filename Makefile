@@ -2,9 +2,9 @@ bucket?=
 distribution?=
 
 install:
-	pip install --upgrade pip
-	pip install mkdocs==1.0.4
-	pip install mkdocs-material==3.1.0
+	pip install --upgrade pip --user
+	pip install mkdocs==1.0.4 --user
+	pip install mkdocs-material==3.1.0 --user
 	
 build:
 ifdef CONTINUOUSPHP
