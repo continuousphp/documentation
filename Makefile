@@ -4,13 +4,7 @@ distribution?=
 install:
 ifdef CONTINUOUSPHP
 	sudo apt-get update -y
-	sudo apt-get install -y software-properties-common
-	sudo add-apt-repository ppa:jonathonf/python-3.6
-	sudo apt-get update -y
-	sudo apt-get install -y python3 python3-pip python3.6
-	sudo pip3 install virtualenv
-	virtualenv -p /usr/bin/python3.6 ~/virtualenvs/venv-devopspy
-	source ~/virtualenvs/venv-devopspy/bin/activate
+	sudo apt-get install -y python3 python3-pip
 endif
 	sudo pip3 install mkdocs==1.0.4 mkdocs-material==3.1.0
 
