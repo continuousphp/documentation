@@ -12,8 +12,8 @@ ifdef CONTINUOUSPHP
 	virtualenv -p /usr/bin/python3.6 ~/virtualenvs/venv-devopspy
 	source ~/virtualenvs/venv-devopspy/bin/activate
 endif
-	pip3 install mkdocs mkdocs-material
-	
+	pip3 install mkdocs==1.0.4 mkdocs-material==3.0.1
+
 build:
 ifdef CONTINUOUSPHP
 	rm -rf .git
