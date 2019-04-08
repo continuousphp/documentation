@@ -9,7 +9,7 @@ theme:
         primary: 'indigo'
         accent: 'light green'
 # Copyright
-copyright: 'Copyright &copy; 2017 - 2018 Continuous SA'
+copyright: 'Copyright &copy; 2017 - 2019 Continuous SA'
 # Options
 extra:
   social:
@@ -22,11 +22,13 @@ extra:
 # Extensions
 markdown_extensions:
   - admonition
-  - codehilite(guess_lang=false)
-  - toc(permalink=true)
+  - codehilite: 
+        guess_lang: false
+  - toc:
+        permalink: true
   - meta
 # Navigation
-pages:
+nav:
     - INTRODUCTION: index.md
     - GIT REPOSITORY HOSTING SERVICES:  
         - GIT REPOSITORY HOSTING SERVICES: vcs.md  
