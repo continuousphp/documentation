@@ -35,7 +35,7 @@ continuousphp provides you with a set of built-in environment variables that you
 * ***${X:-12}*** :  5d8b6516aa7b
 
 !!! note "**IMPORTANT**"
-    Make sure that the IAM credentials you provide only have the strict minimum of permissions.
-    Example: The provided IAM credentials shouldn't be able to erase your ECR repository.
+    Make sure that the IAM credentials you provide only have the strict minimum of permissions. For instance
+    the provided IAM credentials shouldn't be able to erase your ECR repository.
 
 And that's it ! You just configured your Dockerfile to be deployed with AWS ECR.
