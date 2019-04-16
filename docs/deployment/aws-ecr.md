@@ -25,7 +25,16 @@ Once you have added the IAM credentials and you defined Docker as packaging meth
 
 ![AWS deployment](/assets/doc/deployment/aws-ecr/destination.png)
 
-!!! note "**IMPORTANT:**"
+## Use environment variables to define your tags
+continuousphp provides you with a set of built-in environment variables that you can use to define your tags. Moreover you may want to truncate those variables then you can use the following syntax :
+
+* ***X*** : 225ff583-0d80-4093-869e-5d8b6516aa7b
+* ***${X}*** : X
+* ***${X:0,8}*** : 225ff583
+* ***${X:8}*** :  -0d80-4093-869e-5d8b6516aa7b
+* ***${X:-12}*** :  5d8b6516aa7b
+
+!!! note "**IMPORTANT**"
     Make sure that the IAM credentials you provide only have the strict minimum of permissions.
     Example: The provided IAM credentials shouldn't be able to erase your ECR repository.
 
