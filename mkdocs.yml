@@ -57,6 +57,7 @@ nav:
         - GENERIC TARBALL: deployment/generic-tarball.md
         - SCRIPT DEPLOYMENT: deployment/script.md
         - AWS CODEDEPLOY: deployment/aws-code-deploy.md
+        - AWS ECR: deployment/aws-ecr.md
         - AWS ELASTIC BEANSTALK: deployment/aws-elastic-beanstalk.md
         - ZEND SERVER: deployment/zend-server.md
     - PHP: 
