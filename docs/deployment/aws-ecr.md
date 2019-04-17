@@ -7,7 +7,7 @@ order:          6
 excerpt:        "Deploy your containers to AWS ECR in a few clicks."
 ---
 
-[AWS ECR](https://aws.amazon.com/ecr) allows you to deploy your containers directly to Amazon ECR.
+[AWS ECR](https://aws.amazon.com/ecr) is a fully-managed Docker container registry that makes it easy for developers to store, manage, and deploy Docker container images
 
 ## Specify your AWS credentials
 To deploy to your AWS account, continuousphp needs an IAM key and secret. You can specify them in the 1st step of the project
