@@ -29,91 +29,95 @@ markdown_extensions:
   - meta
 # Navigation
 nav:
-    - INTRODUCTION: index.md
-    - GIT REPOSITORY HOSTING SERVICES:  
-        - GIT REPOSITORY HOSTING SERVICES: vcs.md  
-        - ACCESS &AMP; PERMISSIONS: vcs/access-and-permissions.md
-        - GITHUB: vcs/github.md
-        - BITBUCKET: vcs/bitbucket.md
-        - GITLAB: vcs/gitlab.md
-    - DEPLOYMENT PIPELINES: deployment-pipelines.md
-    - TESTING: 
-        - TESTING: testing.md
-        - PHPUNIT: testing/phpunit.md
-        - BEHAT: testing/behat.md
-        - PHPSPEC: testing/phpspec.md
-        - PHPCS: testing/phpcs.md
-        - CODECEPTION: testing/codeception.md
-        - PHPBENCH: testing/phpbench.md
-        - PHP LINT: testing/phplint.md
-        - GENERIC TEST: testing/generic.md
-    - COMPOSER: composer.md
-    - BROWSER/UI TESTING: 
-        - BROWSER/UI TESTING: browser-ui-testing.md
-        - PHANTOMJS: browser-ui-testing/phantomjs.md
-        - SELENIUM SERVER STANDALONE: browser-ui-testing/selenium-server.md
-    - DEPLOYMENT: 
-        - DEPLOYMENT: deployment.md
-        - GENERIC TARBALL: deployment/generic-tarball.md
-        - SCRIPT DEPLOYMENT: deployment/script.md
-        - AWS CODEDEPLOY: deployment/aws-code-deploy.md
-        - AWS ELASTIC BEANSTALK: deployment/aws-elastic-beanstalk.md
-        - ZEND SERVER: deployment/zend-server.md
-    - PHP: 
-        - PHP: php.md
-        - 7.1.0: php/7.1.0.md
-        - 7.0.22: php/7.0.22.md
-        - 7.0.4: php/7.0.4.md
-        - 5.6.4: php/5.6.4.md
-        - 5.5.13: php/5.5.13.md
-        - 5.5.6: php/5.5.6.md
-        - 5.4.22: php/5.4.22.md
-        - 5.4.21: php/5.4.21.md
-        - 5.3.27: php/5.3.27.md
-        - PHPBREW: php/phpbrew.md
-        - 5.3.3: php/5.3.3.md
-    - CONTAINERS: containers.md
-    - CREDENTIALS &AMP; AUTHENTICATION: 
-        - CREDENTIALS &AMP; AUTHENTICATION: credentials-authentication.md
-        - AWS (AMAZON WEB SERVICES): credentials-authentication/aws.md
-        - SSH KEYS: credentials-authentication/ssh.md
-        - HTTP BASIC AUTHENTICATION: credentials-authentication/http-basic-authentication.md
-    - DATABASES: 
-        - DATABASES: databases.md
-        - MYSQL: databases/mysql.md
-        - MARIADB: databases/mariadb.md
-        - POSTGRESQL: databases/postgresql.md
-        - SQLITE: databases/sqlite.md
-        - ORACLE XE: databases/oracle.md
-        - VIRTUOSO 7: databases/virtuoso.md
-    - NOSQL:
-        - NOSQL: nosql.md
-        - MONGODB: nosql/mongodb.md
-        - REDIS: nosql/redis.md
-        - COUCHBASE: nosql/couchbase.md
-    - QUEUES:
-        - QUEUES: queues.md
-        - BEANSTALKD: queues/beanstalkd.md
-    - WEB SERVERS: webserver.md
-    - RUBY VERSIONS: ruby.md
-    - TASK RUNNERS:
-        - TASK RUNNERS: task-runners.md
-        - SHELL SCRIPTS: taskrunners/shell-scripts.md
-        - PHING: taskrunners/phing.md
-    - NODEJS VERSIONS: nodejs.md
-    - EMAILS: 
-        - MAILCATCHER: emails/mailcatcher.md
-    - RESTFUL API: api.md
-    - NOTIFICATION: 
-        - NOTIFICATION: notification.md
-        - SLACK: notification/slack.md
-        - HIPCHAT: notification/hipchat.md
-        - IRC: notification/irc.md
-        - HTTP: notification/http.md
-        - AWS SNS: notification/aws-sns.md
-    - INDEXING TOOLS: 
-        - INDEXING TOOLS: indexing.md
-        - SOLR: indexing/solr.md
-    - FIREWALL &AMP; NETOWRK SETTINGS:
-        - NETWORK SETTINGS: security/firewall.md
-    - ENVIRONMENT VARIABLES: environment-variables.md
+    - Welcome: index.md
+    - Getting started:
+        - Create a new project:  
+            - Git repository hosting services: vcs.md
+            - Use your account:
+                - Github: vcs/github.md
+                - Bitbucket: vcs/bitbucket.md
+                - Gitlab: vcs/gitlab.md
+        - Create a new pipeline: deployment-pipelines.md
+        - Configure your pipeline:
+            - Choose a PHP version: 
+                - PHP versions overview : php.md
+                - 7.1.0: php/7.1.0.md
+                - 7.0.22: php/7.0.22.md
+                - 7.0.4: php/7.0.4.md
+                - 5.6.4: php/5.6.4.md
+                - 5.5.13: php/5.5.13.md
+                - 5.5.6: php/5.5.6.md
+                - 5.4.22: php/5.4.22.md
+                - 5.4.21: php/5.4.21.md
+                - 5.3.27: php/5.3.27.md
+                - PHPBrew: php/phpbrew.md
+                - 5.3.3: php/5.3.3.md
+            - Use environment variables: environment-variables.md          
+            - Use task runners:
+                - Task Runners overview: task-runners.md
+                - Shell-scripts: taskrunners/shell-scripts.md
+                - Phing: taskrunners/phing.md
+            - Use credentials & authentication: 
+                - Credentials & authentication overview: credentials-authentication.md
+                - AWS (Amazon web services): credentials-authentication/aws.md
+                - SSH keys: credentials-authentication/ssh.md
+                - HTTP basic authentication: credentials-authentication/http-basic-authentication.md
+            - Define dependencies: composer.md
+            - Use tests: 
+                - Testing frameworks overview: testing.md
+                - PHPUnit: testing/phpunit.md
+                - Behat: testing/behat.md
+                - PHPSPEC: testing/phpspec.md
+                - PHPCS: testing/phpcs.md
+                - Codeception: testing/codeception.md
+                - PHPBench: testing/phpbench.md
+                - PHP Lint: testing/phplint.md
+                - Generic Test: testing/generic.md
+            - Deploy your application: 
+                - Deployment overview: deployment.md
+                - Generic tarball: deployment/generic-tarball.md
+                - Script deployment: deployment/script.md
+                - AWS CodeDeploy: deployment/aws-code-deploy.md
+                - AWS Elastic Beanstalk: deployment/aws-elastic-beanstalk.md
+                - Zend Server: deployment/zend-server.md
+    - Reference guide:
+        - Configure firewall & network: security/firewall.md
+        - Packages & services overview: containers.md        
+        - Use specific containers:
+            - SQL: 
+                - SQL: databases.md
+                - MYSQL: databases/mysql.md
+                - MARIADB: databases/mariadb.md
+                - POSTGRESQL: databases/postgresql.md
+                - SQLITE: databases/sqlite.md
+                - ORACLE XE: databases/oracle.md
+                - VIRTUOSO 7: databases/virtuoso.md
+            - NoSQL:
+                - NoSQL: nosql.md
+                - MongoDB: nosql/mongodb.md
+                - Redis: nosql/redis.md
+                - CouchBase: nosql/couchbase.md
+            - Queues:
+                - Queues overview: queues.md
+                - Beanstalkd: queues/beanstalkd.md
+            - Browser/UI Testing: 
+                - Browser/UI Testing overview: browser-ui-testing.md
+                - PhantomJS: browser-ui-testing/phantomjs.md
+                - Selenium Server Standalone: browser-ui-testing/selenium-server.md
+            - Web Servers: webserver.md
+        - Use various tools:
+            - Ruby versions: ruby.md
+            - NodeJS versions: nodejs.md
+            - Emails: 
+                - MailCatcher: emails/mailcatcher.md
+            - Restful API: api.md
+            - Indexing tools: 
+                - Indexing tools overview: indexing.md
+                - Solr: indexing/solr.md
+        - Stay tuned with notifications: 
+            - Notifications overview: notification.md
+            - Slack: notification/slack.md
+            - HipChat: notification/hipchat.md
+            - IRC: notification/irc.md
+            - HTTP: notification/http.md
+            - AWS SNS: notification/aws-sns.md
