@@ -5,8 +5,6 @@ theme:
     name: 'material'
     custom_dir: 'theme'
     logo: 'assets/images/logo-white.svg'
-    feature:
-      tabs: true
     palette:
         primary: 'indigo'
         accent: 'light green'
