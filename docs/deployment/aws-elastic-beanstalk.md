@@ -10,7 +10,7 @@ excerpt:        "Deploy your applications to AWS EC2 in a few clicks."
 [AWS Elastic Beanstalk](https://aws.amazon.com/elasticbeanstalk) allows you to deploy your applications directly to Amazon EC2 instances.
 
 ## Specify your AWS credentials
-To deploy to your AWS account, continuousphp needs an IAM key and secret. You can specify them in the 1st step of the project
+To deploy to your AWS account, continuousphp needs access keys for IAM users. You can specify them in the 1st step of the project
 setup or simply when adding a new pipeline to your existing project.
 
 ![AWS IAM credentials](/assets/doc/deployment/aws-elastic-beanstalk/iam-credentials.png)
