@@ -41,6 +41,8 @@ nav:
         - Configure your pipeline:
             - Choose a PHP version: 
                 - PHP versions overview : php.md
+                - 7.2.0: php/7.2.0.md
+                - 7.1.12: php/7.1.12.md
                 - 7.1.0: php/7.1.0.md
                 - 7.0.22: php/7.0.22.md
                 - 7.0.4: php/7.0.4.md
