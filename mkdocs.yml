@@ -106,6 +106,9 @@ nav:
                 - PhantomJS: browser-ui-testing/phantomjs.md
                 - Selenium Server Standalone: browser-ui-testing/selenium-server.md
             - Web Servers: webserver.md
+            - Other services:
+                - ElasticSearch: elasticsearch.md
+                - RabbitMQ: rabbitmq.md
         - Use various tools:
             - Ruby versions: ruby.md
             - NodeJS versions: nodejs.md
