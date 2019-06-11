@@ -42,3 +42,9 @@ Host, authentication and default database settings:
  By activating Oracle XE, your build will take more time because the container needs some time to prepare the database and the tablespace.
 </div>
 
+## Importing database dump
+
+ContinuousPHP provides users with the ability to import oracle database dump files. To enable it, simply add an environment variable `PATH_IMPORT_DUMP_DB_ORACLE` which refers to the absolute path of specified database dump file in repository context. 
+If you are using GitHub you should store the database dump file with [Git LFS](https://git-lfs.github.com/).
+
+
