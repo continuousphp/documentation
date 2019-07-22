@@ -5,16 +5,18 @@ category:       "credentials-authentication"
 order:          2
 excerpt:        "SSH Key support by continuousphp"
 ---
-If you have private repositories on Bitbucket/Gitlab or a Satis/Toran Proxy with private dependencies,
-you can use SSH Keys to access them during your build. Simply go to the *Build Settings* of your pipeline
-configuration and enter your private SSH Keys to make them available in every container of your build. 
+
+
+If you need to use private repositories on Bitbucket/Gitlab or a Satis/Toran Proxy with private dependencies, ContinuousPHP offer several ways to reach your goal.
+
+First, simply go to the *Build Settings* of your pipeline configuration and enter your private SSH Keys to make them available in every container of your build. 
 
 ![SSH Keys](/assets/doc/credentials-authentication/ssh.png)
 
 ## Using private repositories from Bitbucket or Gitlab
 
 Using SSH Keys to authenticate, you can use private repositories from *Bitbucket* or *Gitlab* as dependencies in *Composer*. Here
-is an example of how to configure *Composer* :
+is an example of how to configure *Composer*:
 
 ```
 {
@@ -27,11 +29,40 @@ is an example of how to configure *Composer* :
     "repositories": [
         {
             "type": "vcs",
-            "url": "git@bitbucket.org:continuousphp/my-private-dependency.git"
+            "url": "git@keyname-bb:continuousphp/my-private-dependency.git"
         }
     ]
 }
 ```
+Notice that despite of using directly bitbucket.org or gitlab.com as a hostname, we need to use a specific syntax *keyname-bb* where *keyname* refers to the key name specified in
+your pipeline settings and *bb* refers to bitbucket.org. The below table lists each prefix associated to git hosts:
+
+
+<table>
+  <tr>
+    <td>bb</td><td>bitbucket.org</td> 
+  </tr>
+  <tr>
+    <td>gh</td><td>github.com</td> 
+  </tr>
+  <tr>
+    <td>gl</td><td>gitlab.com</td> 
+  </tr>
+</table>
+
+
+### Alternatively, add ContinuousPHP deploy key to your private library
+
+For instance, you want to build the  git@bitbucket.org:account_of_project/project which depends on the library git@library_hosting_service:account_of_library/library.
+Notice that the project hosting service is Bitbucket.
+Then you can get the deploy key used by ContinuousPHP and add it to your library repository.
+
+![bitbucket settings](/assets/doc/credentials-authentication/bitbucket_account_settings.png)
+
+![bitbucket_continuousphp_deploykey](/assets/doc/credentials-authentication/bitbucket_continuousphp_deploykey.png)
+
+In this way, you don't need to refer any keys in your pipeline settings.
+
 
 ## Using private repositories from Satis
 
@@ -104,3 +135,4 @@ To use our new Satis Proxy with *Composer* we have to include it in our `compose
 ```
 
 And that's it! When running `composer install`, *Composer* should now install your private dependencies directly from Satis.
+
