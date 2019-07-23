@@ -89,12 +89,12 @@ nav:
         - Use specific containers:
             - SQL: 
                 - SQL: databases.md
-                - MYSQL: databases/mysql.md
-                - MARIADB: databases/mariadb.md
-                - POSTGRESQL: databases/postgresql.md
-                - SQLITE: databases/sqlite.md
-                - ORACLE XE: databases/oracle.md
-                - VIRTUOSO 7: databases/virtuoso.md
+                - MySQL: databases/mysql.md
+                - MariaDB: databases/mariadb.md
+                - PostgreSQL: databases/postgresql.md
+                - SQLite: databases/sqlite.md
+                - Oracle XE: databases/oracle.md
+                - Virtuoso 7: databases/virtuoso.md
             - NoSQL:
                 - NoSQL: nosql.md
                 - MongoDB: nosql/mongodb.md
