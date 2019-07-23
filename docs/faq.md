@@ -9,7 +9,7 @@ excerpt:       "FAQ by continuousphp"
 
 ## Composer fails while installing additional libraries
 
-If you see a "RuntimeException" message while composer installs additional librairies, please refer to this [section](/credentials-authentication/ssh.md) about SSH keys settings.
+If you see a "RuntimeException" message while composer installs additional librairies, please refer to this [section](./credentials-authentication/ssh.md) about SSH keys settings.
 
 ## ContinuousPHP cannot clone my project
 
