@@ -85,6 +85,7 @@ nav:
                 - Zend Server: deployment/zend-server.md
     - Reference guide:
         - Configure firewall & network: security/firewall.md
+        - Configure Satis: satis.md
         - Packages & services overview: containers.md        
         - Use specific containers:
             - SQL: 
