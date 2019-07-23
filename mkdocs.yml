@@ -85,16 +85,17 @@ nav:
                 - Zend Server: deployment/zend-server.md
     - Reference guide:
         - Configure firewall & network: security/firewall.md
+        - Configure Satis: satis.md
         - Packages & services overview: containers.md        
         - Use specific containers:
             - SQL: 
                 - SQL: databases.md
-                - MYSQL: databases/mysql.md
-                - MARIADB: databases/mariadb.md
-                - POSTGRESQL: databases/postgresql.md
-                - SQLITE: databases/sqlite.md
-                - ORACLE XE: databases/oracle.md
-                - VIRTUOSO 7: databases/virtuoso.md
+                - MySQL: databases/mysql.md
+                - MariaDB: databases/mariadb.md
+                - PostgreSQL: databases/postgresql.md
+                - SQLite: databases/sqlite.md
+                - Oracle XE: databases/oracle.md
+                - Virtuoso 7: databases/virtuoso.md
             - NoSQL:
                 - NoSQL: nosql.md
                 - MongoDB: nosql/mongodb.md
@@ -127,3 +128,4 @@ nav:
             - IRC: notification/irc.md
             - HTTP: notification/http.md
             - AWS SNS: notification/aws-sns.md
+    - FAQ: faq.md

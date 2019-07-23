@@ -5,16 +5,18 @@ category:       "credentials-authentication"
 order:          2
 excerpt:        "SSH Key support by continuousphp"
 ---
-If you have private repositories on Bitbucket/Gitlab or a Satis/Toran Proxy with private dependencies,
-you can use SSH Keys to access them during your build. Simply go to the *Build Settings* of your pipeline
-configuration and enter your private SSH Keys to make them available in every container of your build. 
+
+
+If you need to use private repositories on Bitbucket/Gitlab or a Satis/Toran Proxy with private dependencies, ContinuousPHP offer several ways to reach your goal.
+
+First, simply go to the *Build Settings* of your pipeline configuration and enter your private SSH Keys to make them available in every container of your build. 
 
 ![SSH Keys](/assets/doc/credentials-authentication/ssh.png)
 
 ## Using private repositories from Bitbucket or Gitlab
 
 Using SSH Keys to authenticate, you can use private repositories from *Bitbucket* or *Gitlab* as dependencies in *Composer*. Here
-is an example of how to configure *Composer* :
+is an example of how to configure *Composer*:
 
 ```
 {
@@ -27,80 +29,58 @@ is an example of how to configure *Composer* :
     "repositories": [
         {
             "type": "vcs",
-            "url": "git@bitbucket.org:continuousphp/my-private-dependency.git"
+            "url": "git@github.com:continuousphp/my-private-dependency.git"
         }
     ]
 }
 ```
 
-## Using private repositories from Satis
-
-Using SSH Keys to authenticate, you can use your own Satis Proxy to install private dependencies with *Composer*. Let's create
-an example of how to mirror repositories with Satis and then use them with *Composer* :
-
-### Satis Installation
-
-We first need to install *Satis* :
-
-```
-$ composer create-project composer/satis --stability=dev
-```
-
-### Satis configuration
-
-Once Satis is installed, create a Satis configuration file, e.g. `satis.json` :
+If your library belongs to the same git provider as the one of your project, you need to set your composer.json. Here is an other example.
 
 ```
 {
-    "name": "My mirrored dependencies",
-    "homepage": "http://my-satis-address.com",
+    "name":     "continuousphp/my-application",
+    "homepage": "https://my-application.com/",
+    "require":  {
+        "php": ">=5.6",
+        "continuousphp/my-private-dependency": "~1.0.0"
+    },
     "repositories": [
         {
             "type": "vcs",
-            "url": "git@github.com:continuousphp/repository-to-mirror-1.git"
-        },
-        {
-            "type": "vcs",
-            "url": "git@github.com:continuousphp/repository-to-mirror-2.git"
+            "url": "git@keyname-bb:continuousphp/my-private-dependency.git"
         }
-    ],
-    "require-all": true,
-    "require-dependencies": true,
-    "archive": {
-        "directory": "dist",
-        "format": "tar",
-        "skip-dev": true
-    }
+    ]
 }
 ```
 
-### Build the repositories
+Notice that despite of using directly your git provider url (i.e bitbucket.org, gitlab.com ...) as a hostname, you need to use a specific syntax *keyname-bb* where:
 
-After creating the Satis configuration file, you need to tell Satis create the repositories :
+* ***keyname*** refers to the key name specified in your pipeline settings 
+* ***bb*** refers to bitbucket.org.<br/>
 
-```
-$ ./bin/satis build satis.json my-mirrored-dependencies/
-```
+The below table lists each prefix associated to git hosting services.
 
-When this command finishes, we have a new directory `my-mirrored-dependencies` with two files: `packages.json` and `index.html`.
-`packages.json` will be read by *Composer* to determine what packages the repository offers.
-`index.html` is a static HTML file with information about the repository.
-It also contains the dist directory with all packages so they won’t have to be downloaded from GitHub anymore.
 
-### Use Satis in Composer
+<table>
+  <tr>
+    <td>bb</td><td>bitbucket.org</td> 
+  </tr>
+  <tr>
+    <td>gh</td><td>github.com</td> 
+  </tr>
+</table>
 
-To use our new Satis Proxy with *Composer* we have to include it in our `composer.json` like this :
 
-```
-{
-    "repositories": [
-        {
-            "type": "composer",
-            "url": "http://my-satis-address.com"
-        }
-    ],
-    ...
-}
-```
+### ***Only for Bitbucket*** alternatively add ContinuousPHP deploy key to your private library 
 
-And that's it! When running `composer install`, *Composer* should now install your private dependencies directly from Satis.
+For instance, you want to build the  git@bitbucket.org:account_of_project/project which depends on the library git@library_hosting_service:account_of_library/library.<br/>
+Then you can get the deploy key used by ContinuousPHP and add it to your library repository.
+
+![bitbucket settings](/assets/doc/credentials-authentication/bitbucket_account_settings.png)
+
+![bitbucket_continuousphp_deploykey](/assets/doc/credentials-authentication/bitbucket_continuousphp_deploykey.png)
+
+In this way, you don't need to refer any keys in your pipeline settings.
+
+If these solutions don't exactly match your needs, you could try to use Satis as explained in this [section](../satis.md).
