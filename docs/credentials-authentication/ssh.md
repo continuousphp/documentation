@@ -34,8 +34,12 @@ is an example of how to configure *Composer*:
     ]
 }
 ```
-Notice that despite of using directly bitbucket.org or gitlab.com as a hostname, we need to use a specific syntax *keyname-bb* where *keyname* refers to the key name specified in
-your pipeline settings and *bb* refers to bitbucket.org. The below table lists each prefix associated to git hosts:
+Notice that despite of using directly your git provider url (i.e bitbucket.org, gitlab.com ...) as a hostname, we need to use a specific syntax *keyname-bb* where:
+
+* ***keyname*** refers to the key name specified in your pipeline settings 
+* ***bb*** refers to bitbucket.org.<br/>
+
+The below table lists each prefix associated to git hosting services.
 
 
 <table>
@@ -51,10 +55,9 @@ your pipeline settings and *bb* refers to bitbucket.org. The below table lists e
 </table>
 
 
-### Alternatively, add ContinuousPHP deploy key to your private library
+### ***Only for Bitbucket*** alternatively add ContinuousPHP deploy key to your private library 
 
-For instance, you want to build the  git@bitbucket.org:account_of_project/project which depends on the library git@library_hosting_service:account_of_library/library.
-Notice that the project hosting service is Bitbucket.
+For instance, you want to build the  git@bitbucket.org:account_of_project/project which depends on the library git@library_hosting_service:account_of_library/library.<br/>
 Then you can get the deploy key used by ContinuousPHP and add it to your library repository.
 
 ![bitbucket settings](/assets/doc/credentials-authentication/bitbucket_account_settings.png)

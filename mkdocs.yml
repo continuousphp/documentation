@@ -127,3 +127,4 @@ nav:
             - IRC: notification/irc.md
             - HTTP: notification/http.md
             - AWS SNS: notification/aws-sns.md
+    - FAQ: faq.md
