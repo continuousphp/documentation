@@ -54,7 +54,7 @@ If your library belongs to the same git provider as the one of your project, you
 }
 ```
 
-Notice that despite of using directly your git provider url (i.e bitbucket.org, gitlab.com ...) as a hostname, we need to use a specific syntax *keyname-bb* where:
+Notice that despite of using directly your git provider url (i.e bitbucket.org, gitlab.com ...) as a hostname, you need to use a specific syntax *keyname-bb* where:
 
 * ***keyname*** refers to the key name specified in your pipeline settings 
 * ***bb*** refers to bitbucket.org.<br/>
