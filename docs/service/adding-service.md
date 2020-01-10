@@ -22,6 +22,7 @@ You can refer to this <a href="https://github.com/continuousphp/infra-worker/pul
 ##  Changes in worker 
 
 1. <b>Modification in common.php file </b>
+
 Add reference to the container at the level of shared key and assign false  to it 
 
 Example: 
@@ -39,6 +40,7 @@ Example:
 ```
 
 2. <b>Modification in Composition.php file </b>
+
 Add condition to verify if the envirenement variable is set in the array named variables.
 
 ```
@@ -50,6 +52,7 @@ if (array_key_exists('CPHP_SERVICE_REDIS', $variables)) {
 ```
 
 3. <b>Add class</b> 
+
 Add class in the container folder. This class must extend the Container abstract class.
 Add the container name in the CONTAINER_NAME varibale according to the convention cphp-<servicename>
 
