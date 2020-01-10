@@ -1,3 +1,5 @@
+In this doc we enumerate steps to add a new a service, we took redis service as an example.
+
 ##  Changes in infra-worker 
 Add the new service inside the docker-compose which is in infra-worker/worker/files/default/docker
 
