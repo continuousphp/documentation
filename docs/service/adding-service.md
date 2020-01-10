@@ -19,7 +19,8 @@ Example
 Add a reference to the container at the level of shared key and assign false  to it 
 
 Example
-```'worker.compose.container.redis' => false,
+``` 
+'worker.compose.container.redis' => false,
 ```
 Add a reference to the container at the level of abstract_factories and assign \Worker\Compose\Container\ContainerAbstractFactory::class to it
 
