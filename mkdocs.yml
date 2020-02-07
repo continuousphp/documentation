@@ -37,23 +37,27 @@ nav:
                 - Github: vcs/github.md
                 - Bitbucket: vcs/bitbucket.md
                 - Gitlab: vcs/gitlab.md
+
         - Create a new pipeline: deployment-pipelines.md
+        - Runtime containers:
+              - PHP versions overview: php.md
+              - 7.3.8: php/7.3.8.md
+              - 7.0.33: php/7.0.33.md
+              - 7.1.31: php/7.1.31.md
+              - 7.2.21: php/7.2.21.md
+              - 7.2.0 DEPRECATED: php/7.2.0.md
+              - 7.1.12 DEPRECATED: php/7.1.12.md
+              - 7.1.0 DEPRECATED: php/7.1.0.md
+              - 7.0.22 DEPRECATED: php/7.0.22.md
+              - 7.0.4 DEPRECATED: php/7.0.4.md
+              - 5.6.4 DEPRECATED: php/5.6.4.md
+              - 5.5.13 DEPRECATED: php/5.5.13.md
+              - 5.5.6 DEPRECATED: php/5.5.6.md
+              - 5.4.22 DEPRECATED: php/5.4.22.md
+              - 5.4.21 DEPRECATED: php/5.4.21.md
+              - 5.3.27 DEPRECATED: php/5.3.27.md
+              - 5.3.3 DEPRECATED: php/5.3.3.md
         - Configure your pipeline:
-            - Choose a PHP version: 
-                - PHP versions overview : php.md
-                - 7.2.0: php/7.2.0.md
-                - 7.1.12: php/7.1.12.md
-                - 7.1.0: php/7.1.0.md
-                - 7.0.22: php/7.0.22.md
-                - 7.0.4: php/7.0.4.md
-                - 5.6.4: php/5.6.4.md
-                - 5.5.13: php/5.5.13.md
-                - 5.5.6: php/5.5.6.md
-                - 5.4.22: php/5.4.22.md
-                - 5.4.21: php/5.4.21.md
-                - 5.3.27: php/5.3.27.md
-                - PHPBrew: php/phpbrew.md
-                - 5.3.3: php/5.3.3.md
             - Use environment variables: environment-variables.md          
             - Use task runners:
                 - Task Runners overview: task-runners.md
@@ -128,4 +132,6 @@ nav:
             - IRC: notification/irc.md
             - HTTP: notification/http.md
             - AWS SNS: notification/aws-sns.md
+    - Migration guide: migration.md
     - FAQ: faq.md
+

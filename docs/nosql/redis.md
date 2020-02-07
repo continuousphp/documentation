@@ -9,9 +9,14 @@ excerpt:        "Redis support by continuousphp"
 
 ## Specification 
 
-Our containers run Redis 2.4.9 with PHP extensions:
+Redis containers are available for each activity in your build. To enable one of them, simply add the environment
+variable `CPHP_SERVICE_REDIS` with the desired Redis version as value to your pipeline configuration. Available versions are :
 
-* redis 
+
+* ***5.0.7***
+
+E.g. if you need `Redis 5.0.7` in your Behat tests, go to the Testing Settings (step 2 of the Pipeline) and add the
+environment variable `CPHP_SERVICE_REDIS = 5.0.7` to the Behat configuration.
 
 ## Connecting to Redis 
 
