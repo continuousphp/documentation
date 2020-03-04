@@ -30,12 +30,9 @@ environment variable `CPHP_SERVICE_SOLR = 8.0` to the Behat configuration.
 
 <table>
   <tr>
-    <td>Host</td><td>solr-${CPHP_SERVICE_SOLR}</td>
+    <td>Host</td><td>solr</td>
   </tr>
   <tr>
     <td>Port</td><td>8983</td>
-  </tr>
-  <tr>
-    <td>Exemple</td><td>For SolR 7.7 host is solr-7.7</td>
   </tr>
 </table>
