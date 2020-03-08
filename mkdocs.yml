@@ -115,6 +115,7 @@ nav:
             - Web Servers: webserver.md
             - Other services:
                 - ElasticSearch: elasticsearch.md
+                - SolR: solr.md
                 - RabbitMQ: rabbitmq.md
         - Use various tools:
             - Ruby versions: ruby.md

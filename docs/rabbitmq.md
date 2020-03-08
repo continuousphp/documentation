@@ -17,7 +17,7 @@ variable `CPHP_SERVICE_RABBITMQ` with the desired RabbitMQ version as value to y
 E.g. if you need `RabbitMQ 3.7.5` in your Behat tests, go to the Testing Settings (step 2 of the Pipeline) and add the
 environment variable `CPHP_SERVICE_RABBITMQ = 3.7.5` to the Behat configuration.
 
-## Connecting to elasticsearch
+## Connecting to RabbitMQ
 
 <table>
   <tr>
