@@ -24,12 +24,21 @@ theses services are now part as side containers and can be activated using envir
 
 ## Update nodejs version
 
-We are no longer using nvm to change nodejs version, inside you should follow the example below.
+We are no longer using nvm to change nodejs version.
+If in your configuration, you are using something like this
 
-```xml
-sh $(NVM_DIR)/nvm.sh
-sudo su -c "source /etc/profile ; nvm install 10.16.3 -reinstall-packages-from=v5.4.1 ; nvm alias default 10.16.3 ; nvm list"
+`sudo su -c "source /etc/profile ; nvm install 10.16.3 -reinstall-packages-from=v5.4.1"`
+
+You must replace it by using `n` progam (more information on https://github.com/tj/n)
+
+```bash
+n lts
+OR
+n 12.16
+OR
+n 12.16.1
 ```
+
 ## Missing commands 
 
 Commands listed below are missing: 
