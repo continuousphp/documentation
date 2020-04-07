@@ -36,3 +36,15 @@ environment variable `CPHP_SERVICE_SOLR = 8.0` to the Behat configuration.
     <td>Port</td><td>8983</td>
   </tr>
 </table>
+
+## Import your own configuration
+
+Continuous PHP provides possibility to import your own configuration and datas.  
+For that, we create a new core at SolR start up.  
+  
+Fist, put a directory with your core config into your repository. We'll copy and activate it in your service contianer.  
+  
+Declare this repository in your pipeline using `CPHP_PATH_SOLR_CONFIG` environement variable.  
+Put as value your directory's relative path like `CPHP_PATH_SOLR_CONFIG=solr/mydata`.  
+
+You can choose your core name (facultative) using `CPHP_SOLR_CORE_NAME=mycore`. Default value is 'core0'.  
