@@ -20,7 +20,7 @@ environment variable `CPHP_SERVICE_REDIS = 5.0.7` to the Behat configuration.
 
 ## Connecting to Redis
 
-Because MongoDB runs in a dedicated container, each version has a specific local domain :
+Because Redis runs in a dedicated container, each version has a specific local domain :
 
 <table>
   <tr>
