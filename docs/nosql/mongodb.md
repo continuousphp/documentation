@@ -43,7 +43,7 @@ Because MongoDB runs in a dedicated container, each version has a specific local
     <td>mongo 3.2.x</td><td>mongo32</td> 
   </tr> 
   <tr>
-    <td>mongo 3.4.x/td><td>mongo34</td> 
+    <td>mongo 3.4.x</td><td>mongo34</td> 
   </tr> 
 </table>
 

@@ -18,6 +18,14 @@ variable `CPHP_SERVICE_REDIS` with the desired Redis version as value to your pi
 E.g. if you need `Redis 5.0.7` in your Behat tests, go to the Testing Settings (step 2 of the Pipeline) and add the
 environment variable `CPHP_SERVICE_REDIS = 5.0.7` to the Behat configuration.
 
-## Connecting to Redis 
+## Connecting to Redis
+
+Because MongoDB runs in a dedicated container, each version has a specific local domain :
+
+<table>
+  <tr>
+    <td>Redis 5.0.7</td><td>redis507</td> 
+  </tr> 
+</table>
 
 There are no Authentication settings.
